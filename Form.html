@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css"/>
+<title> Weaponry </title>
+</head>
+<body>
+<header>
+<h1> Galactic Trade Market </h1>
+</header>
+<nav>
+	<a href="Home.html">Home</a>
+	<a href="Form.html">Arsenal</a>
+	<a href="Form.html">Links</a>
+	<a href="Form.html">Contact Us</a>
+</nav>
+<br/>
+<main>
+<br/>
+	<h2> Weaponry </h2>
+	<form action="receipt.py" autocomplete="on">
+		<p id="clientinfo">
+			<label for="name">Name(require):</label><br/>
+			<input type="text" id="name" name="name" required/><br/>
+			<label for ="email"> Email(require): </label><br/>
+			<input type="email" id="email" name="email" required/><br/>
+			<label for ="phone"> Phone Number(require): </label><br/>
+			<input type="tel" id="phone" name="phone" required/><br/>
+			<label for ="shippingaddress"> Shipping Address(require): </label><br/>
+			<input type="text" id="shippingaddress" name="shippingaddress" required/><br/>
+			<label for ="city"> City(require): </label><br/>
+			<input type="text" id="city" name="city" required/><br/>
+			<label for ="province"> Province(require): </label><br/>
+			<input type="text" id="province" name="province" required/><br/>
+			<label for ="country"> Country(require): </label><br/>
+			<input type="text" id="country" name="country" required/><br/>
+			<label for ="zipcode"> Zip Code(require): </label><br/>
+			<input type="text" id="zipcode" name="zipcode" required/><br/>			
+			<label for ="deliverydate"> Expected Delivery Date </label><br/>
+			<input type="text" id="deliverydate" name="deliverydate"/><br/>
+		</p>
+		<p id="clientgender">
+			<label> Salutation (for gender):</label><br/>
+			<select name="gender">
+			<option value="mr">Mr.</option>
+			<option value="mrs">Mrs.</option>
+			<option value="ms">Ms.</option>
+			</select>
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Price per Item </th>
+					<th>Quantity</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="productitem">
+					<td> <br/> Renegade Interceptor Blaster Rifle<br/><br/><img src="RenegadeInterceptor.jpg" alt="rifle" class="thumb"><br/><br/></td>
+					<td> $20000 </td>
+					<td><input type="number" value="1" min="0" id="rifleinput" name="quantity1" required></td>
+				</tr>
+				<tr class="productitem">
+					<td> <br/> R-110 Pulse-Wave Saboteur Assault Cannon<br/><br/><img src="R-110Pulse-WaveSaboteur.jpg" alt="cannon" class="thumb"><br/><br/></td>
+					<td> $30000 </td>
+					<td><input type="number" value="1" min="0" id="cannoninput" name="quantity2" required></td>
+				</tr>
+				<tr class="productitem">
+					<td> <br/> R-55 Searing Disruptor Sniper Rifle<br/><br/><img src="R-55SearingDisruptor.jpg" alt="sniper" class="thumb"><br/><br/></td>
+					<td> $18000 </td>
+					<td><input type="number" value="1" min="0" id="sniperinput" name="quantity3" required></td>
+				</tr>
+				<tr class="productitem">
+					<td> <br/> A-300 Heavy Sonic Needler Blaster Pistol<br/><br/><img src="A-300HeavySonicNeedler.jpg" alt="pistol" class="thumb"><br/><br/></td>
+					<td> $10000 </td>
+					<td><input type="number" value="1" min="0" id="pistolinput" name="quantity4" required></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+		<input type="submit" value="Place Order" autofocus>
+		</p>
+	</form>
+</main>
+</body>
+</html>

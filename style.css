@@ -1,0 +1,37 @@
+body
+{
+	text-align: center;
+	background-color: #000000;
+	color: #7FE817;
+	font-size: 120%;
+}
+header, main
+{
+	background-color:#254117;
+}
+a
+{
+	color: #2B65EC;
+	padding: 0.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	border: solid;
+	text-decoration:none;
+}
+a:hover
+{
+	background-color: #493D26;
+}
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+.thumb
+{
+	width: 50%;
+}
+td
+{
+	border:solid;
+}
